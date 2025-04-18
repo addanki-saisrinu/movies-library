@@ -3,12 +3,11 @@
 /* navbar styles start here */
 
 .navbar {
-    padding: 10px;
     font-size: 1.6rem;
 }
 
 .signin-h-secreen {
-    height: calc(100vh - 60px);
+    height: 100vh;
 }
 
 .btn {
@@ -25,7 +24,6 @@
 
 input[type="email"] {
     outline: none;
-    padding: 0px 0px 0px 5px;
     margin-bottom: 8px;
     border-radius: 5px;
 }
@@ -37,19 +35,17 @@ input[type="email"]::placeholder {
 
 input[type="text"] {
     outline: none;
-    padding: 0px 0px 0px 5px;
     margin-bottom: 8px;
     border-radius: 5px;
 }
 
 input[type="text"]::placeholder {
     color: gray;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 input[type="password"] {
     outline: none;
-    padding: 0px 0px 0px 5px;
     margin-bottom: 8px;
     border-radius: 5px;
 }
@@ -71,6 +67,7 @@ input[type="password"]::placeholder {
 
 .sign-card {
     width: 300px;
+    border-radius: 10px;
     box-shadow: 1px 1px 7px 2px gray;
     padding: 20px;
     background-color: white;
@@ -93,7 +90,7 @@ input[type="password"]::placeholder {
     }
 }
 
-.user-details {
+.user-details-1 {
     margin-top: 10px;
 }
 
@@ -109,18 +106,15 @@ input[type="password"]::placeholder {
 
 .already-account-link {
     margin-top: 10px;
-    text-decoration: underline;
 }
 
 .already-account-link:hover {
-    color: blue;
-    text-decoration: underline;
     cursor: pointer;
 }
 
 /* login page styles start here */
 .login-page {
-    height: calc(100vh - 60px);
+    height: 100vh;
     background-color: rgb(105, 170, 196);
 }
 
@@ -129,6 +123,7 @@ input[type="password"]::placeholder {
     box-shadow: 2px 2px 7px 1px grey;
     padding: 15px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .login-email {
@@ -152,7 +147,6 @@ input[type="password"]::placeholder {
     .dashboard-side-section {
         background-color: black;
         color: white;
-        height: calc(100vh - 60px);
         position: sticky;
         top: 60px;
     }

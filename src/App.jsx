@@ -1,19 +1,20 @@
-import Navbar from "./componrnts/navbar";
 import React from "react";
 import Login from "./pages/login";
-import Signin from "./pages/sign-in";
 import { Routes,Route } from "react-router-dom";
 import { Dashboard } from "./pages/dashboard";
+import Signin from "./pages/sign-in";
 
-
+export const BASE_URL = "https://fakestoreapi.com/products";
 const App = () =>{
+    
     return (
         <div>
-            <Navbar />
             <Routes>
-                <Route path="/" element={<Dashboard />}/>
+                <Route path="/" element={<Login />}/>
                 <Route path="/login" element={<Login />}/>
-                <Route path="/register" element={<Signin />}/>
+                <Route path="/register" element={<Signin />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="dashboard/*" element={<Dashboard />} />
             </Routes>
         </div>
     )

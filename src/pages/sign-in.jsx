@@ -21,16 +21,16 @@ const Signin = () => {
             <div className="flex justify-center items-center signin-h-secreen signin">
                 <div className="sign-card">
                     <h1 className="text-center font-semibold">USER REGISTER FORM</h1>
-                    <div className="user-details">
+                    <div className="user-details-1">
                         <form onSubmit={handleSubmit}>
-                            <div className="flex flex-col mb-8">
+                            <div className="flex flex-col">
                                 <div className="flex flex-col">
                                     <label htmlFor="username" className="block">Username:</label>
                                     <input 
                                         type="text"
                                         name=""
                                         id=""
-                                        className="w-full border border-1 ps-4"
+                                        className="w-full border border-1 text-2xl p-2"
                                         placeholder="enter username"
                                         required
                                         value={username}
@@ -42,7 +42,7 @@ const Signin = () => {
                                         type="email"
                                         name=""
                                         id=""
-                                        className="w-full border border-1 ps-4"
+                                        className="w-full border border-1 p-2"
                                         placeholder="enter eamil"
                                         required
                                         value={email}
@@ -54,7 +54,7 @@ const Signin = () => {
                                     type="password"
                                         name=""
                                         id=""
-                                        className="w-full border border-1 ps-4"
+                                        className="w-full border border-1 p-2"
                                         placeholder="enter eamil"
                                         required
                                         value={password}
@@ -67,7 +67,7 @@ const Signin = () => {
                                     </div>
                                 </div>
                                 <div className="text-center mt-4 already-account-link">
-                                    <Link to="/login" className="text-1xl">AlreadyAccount Login</Link>
+                                    <Link to="/login" className="text-1xl">AlreadyAccount <span className="text-blue-500 underline">click here</span></Link>
                                 </div>
                             </div>
                         </form>
